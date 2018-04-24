@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="17E199" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb8-17-Fei">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDo-sj-Oix">
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IdJ-1m-phm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2KN-aj-a7C">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QOI-cG-KFC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uAy-jf-QUh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FNx-Ne-Zke"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GDo-sj-Oix" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DXp-aJ-vgG"/>
+                            <constraint firstItem="2KN-aj-a7C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EJL-3B-1wc"/>
+                            <constraint firstItem="GDo-sj-Oix" firstAttribute="top" secondItem="fb8-17-Fei" secondAttribute="bottom" constant="15" id="HLb-Ta-0Vj"/>
+                            <constraint firstItem="uAy-jf-QUh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J8t-cN-khh"/>
+                            <constraint firstItem="fb8-17-Fei" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="ZJZ-pF-Jbm"/>
+                            <constraint firstItem="2KN-aj-a7C" firstAttribute="top" secondItem="GDo-sj-Oix" secondAttribute="bottom" constant="17" id="jj8-Tp-O1f"/>
+                            <constraint firstItem="uAy-jf-QUh" firstAttribute="top" secondItem="2KN-aj-a7C" secondAttribute="bottom" constant="21" id="kE8-mv-y5C"/>
+                            <constraint firstItem="fb8-17-Fei" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lpG-j2-9gm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="text1" destination="2KN-aj-a7C" id="rem-W3-h9Z"/>
+                        <outlet property="text2" destination="uAy-jf-QUh" id="BM4-GM-WZT"/>
+                        <outlet property="theLabel" destination="fb8-17-Fei" id="RBf-MW-B3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
